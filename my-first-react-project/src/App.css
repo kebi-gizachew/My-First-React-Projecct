@@ -1,42 +1,95 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'tahoma';
+    background-color: rgb(244, 247, 248);
+    width: 100vw;
+    height: auto;
+    font-size: 16px;
+    padding:0;
+    overflow-x:hidden;
+}
+.updateOrder{
+    display:flex;
+   height:auto;
+   width:100vw;
+    padding-left:100%;
+    border:none;
+    background:transparent;
+    margin-left:9vw;
+
+} 
+.taskOrder{
+    background-color:transparent;
+    border:none;
+    display:flex;
+    height:600px;
+    width:100vw;
+    margin:auto;
+    margin-left:8vw;
+    margin-top:-2060px;
+margin-bottom:-320px;
+    padding-left:11%;
+
+} 
+
+.recentTask{
+    margin:0;
+    width:70vw;
+    padding:30px;
+    font-size:2.5rem;
+    font-weight:400px;
+    margin:auto;
+    margin-left:7.8vw;
+    margin-top:-360px;
+    
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.recentOrder{
+    width:70vw;
+    height:auto;
+    border-radius:70px;
+    margin-left:7.8vw;
+    margin-bottom:500px
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+@media screen and (max-width: 768px) {
+    .updateOrder, .taskOrder, .recentOrder {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+        margin-left: 0;
+    }
+    .sideBarl{
+        position:absolute;
+        top:auto;   
+        left:0;
+        right:0;
+        margin:auto;
+        width:100vw;
+        height:auto;
+        padding:10px;
+        text-align:center;
+      
+    }
+    .taskOrder {
+        height: auto;
+        margin-top: -1000px;
+        padding-left: 0;
+    }
+    
+    .recentTask {
+        font-size: 2rem;
+        margin-left: 0;
+        margin-top: -200px;
+    }
+    
+    .recentOrder {
+        width: 90vw;
+        margin-left: 0;
+        margin-bottom: 200px;
+    }
 }
